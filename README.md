@@ -4,11 +4,18 @@ App simulates administration of VOD System. Main objects inside are: distributor
 
 ### Project desription
 
-<in progress...>
+Main objects in program are: movies, series, livestreams, users and distributors. Each product has randomize data including picture, title, description, rating etc. Main differences between 3 products type are: movies can be bought when being in the system and watched many times, series can be bought when in the system but watched many times after official realese date, streams can be also bought before but after streaming date they dissapear from the system. Distributor's tasks are: adding new products, negotiating his agreement and changing price of the products. Types of agreements are: getting monthly salary or being paid for each purchase of his product. 
+Users are registrating in the system, buying products, watching them and rating. When new user appears he is selecting type of subscription: basic/family/premium (paid once a month, access to all products) or no subscription meaning paying for each product. 
+
+What's more:
+- All objects' fields are generated *randomly*
+- Each distributor and user is single *thread*
+- Save and loading program state uses *serialization*
 
 ### Graphics
-
-<pictures here>
+#### Main control panel:
+<img src="https://user-images.githubusercontent.com/48522246/54287279-a31cba00-45a5-11e9-87f3-3ce3be307270.png" width="600">
+  
 
 ## Running
 
@@ -29,5 +36,5 @@ I recommend to run the program in the compiler to see details of every action in
 
 ### Author
 
-* **Tomasz Jurek** - *Total work* - [tjurek](https://github.com/arabello7)
+* **Tomasz Jurek** - *Total work* - [tomaszmjurek](https://github.com/tomaszmjurek)
 In case of questions or suggestions feel free to contact me at: tomaszmjurek(at)gmail.com
